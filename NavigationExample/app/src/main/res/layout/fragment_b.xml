@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center"
+    android:background="@color/yellow">
+
+    <TextView
+        android:id="@+id/fragment_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:layout_margin="40dp"
+        android:textSize="100sp"/>
+
+    <Button
+        android:id="@+id/back_to_A_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:text="go back to a"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center"
+    android:background="@color/yellow">
+
+    <TextView
+        android:id="@+id/fragment_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:layout_margin="40dp"
+        android:textSize="100sp"/>
+
+    <TextView
+        android:id="@+id/end_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The End!"
+        android:layout_margin="40dp"
+        android:textSize="50sp"/>
+
+    <TextView
+        android:id="@+id/instruction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use back button to jump back to A"
+        android:layout_margin="40dp"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

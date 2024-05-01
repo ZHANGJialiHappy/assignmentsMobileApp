@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KotlinGeoQuiz</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="next_button">Next</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+    <string name="start_game">Start A Game</string>
+    <string name="play_again">Play Again</string>
+    <string name="win_msg">Congratulations! You won this game :)</string>
+    <string name="lose_msg">Sorry! You had some mistakes and lost the game :(</string>
+    <string name="empty_toast">Please type something in the field</string>
+</resources>

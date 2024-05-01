@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/AFragment">
+    <fragment
+        android:id="@+id/AFragment"
+        android:name="dk.itu.navigationloopexperiment.AFragment"
+        android:label="AFragment" >
+        <action
+            android:id="@+id/action_AFragment_to_BFragment"
+            app:destination="@id/BFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BFragment"
+        android:name="dk.itu.navigationloopexperiment.BFragment"
+        android:label="BFragment" >
+        <action
+            android:id="@+id/action_BFragment_to_CFragment"
+            app:destination="@id/CFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CFragment"
+        android:name="dk.itu.navigationloopexperiment.CFragment"
+        android:label="CFragment" >
+        <action
+            android:id="@+id/action_CFragment_to_DFragment"
+            app:destination="@id/DFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DFragment"
+        android:name="dk.itu.navigationloopexperiment.DFragment"
+        android:label="DFragment" >
+        <action
+            android:id="@+id/action_DFragment_to_EFragment"
+            app:destination="@id/EFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/EFragment"
+        android:name="dk.itu.navigationloopexperiment.EFragment"
+        android:label="EFragment" >
+        <action
+            android:id="@+id/action_EFragment_to_CFragment"
+            app:destination="@id/CFragment" />
+    </fragment>
+</navigation>

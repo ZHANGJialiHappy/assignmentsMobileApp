@@ -1,0 +1,79 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="dk.staunstrups.shopping" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml
+8
+9    <application
+9-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:4:2-23:16
+10        android:allowBackup="true"
+10-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:5:3-29
+11        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+11-->[androidx.core:core:1.7.0] /Users/jiali/.gradle/caches/transforms-3/5586099dc2be2a001572cf14c2426ba8/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+12        android:debuggable="true"
+13        android:icon="@mipmap/ic_launcher"
+13-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:6:3-37
+14        android:label="@string/app_name"
+14-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:7:3-35
+15        android:roundIcon="@mipmap/ic_launcher_round"
+15-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:8:3-48
+16        android:supportsRtl="true"
+16-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:9:3-29
+17        android:testOnly="true"
+18        android:theme="@style/AppTheme" >
+18-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:10:3-34
+19        <activity
+19-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:11:3-19:14
+20            android:name="dk.itu.shopping.ShoppingActivity"
+20-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:11:13-45
+21            android:exported="true"
+21-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:13:4-27
+22            android:screenOrientation="sensor" >
+22-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:12:6-40
+23            <intent-filter>
+23-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:14:4-18:20
+24                <action android:name="android.intent.action.MAIN" />
+24-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:15:5-57
+24-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:15:13-54
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:17:5-65
+26-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:17:15-62
+27            </intent-filter>
+28        </activity>
+29        <activity
+29-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:20:3-22:14
+30            android:name="dk.itu.shopping.ListActivity"
+30-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:20:13-41
+31            android:screenOrientation="sensor" >
+31-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingImg/app/src/main/AndroidManifest.xml:21:4-38
+32        </activity>
+33
+34        <provider
+34-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+35            android:name="androidx.startup.InitializationProvider"
+35-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+36            android:authorities="dk.staunstrups.shopping.androidx-startup"
+36-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+37            android:exported="false" >
+37-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+38            <meta-data
+38-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+39                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+39-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+40                android:value="androidx.startup" />
+40-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+41            <meta-data
+41-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jiali/.gradle/caches/transforms-3/567bfa830a03972b3944320e0a4a107e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+42                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+42-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jiali/.gradle/caches/transforms-3/567bfa830a03972b3944320e0a4a107e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+43                android:value="androidx.startup" />
+43-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jiali/.gradle/caches/transforms-3/567bfa830a03972b3944320e0a4a107e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+44        </provider>
+45    </application>
+46
+47</manifest>

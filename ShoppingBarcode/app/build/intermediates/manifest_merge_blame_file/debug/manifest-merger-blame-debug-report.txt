@@ -1,0 +1,199 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="dk.itu.shopping" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml
+8
+9    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+10    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jiali/.gradle/caches/transforms-3/c2610f0ffa0a675ad2e7e049629d02db/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
+11-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jiali/.gradle/caches/transforms-3/c2610f0ffa0a675ad2e7e049629d02db/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:25:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jiali/.gradle/caches/transforms-3/c2610f0ffa0a675ad2e7e049629d02db/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:5-67
+12-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jiali/.gradle/caches/transforms-3/c2610f0ffa0a675ad2e7e049629d02db/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:26:22-64
+13
+14    <application
+14-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:4:2-20:16
+15        android:allowBackup="true"
+15-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:5:3-29
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.7.0] /Users/jiali/.gradle/caches/transforms-3/5586099dc2be2a001572cf14c2426ba8/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:6:3-37
+19        android:label="@string/app_name"
+19-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:7:3-35
+20        android:roundIcon="@mipmap/ic_launcher_round"
+20-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:8:3-48
+21        android:supportsRtl="true"
+21-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:9:3-29
+22        android:testOnly="true"
+23        android:theme="@style/AppTheme" >
+23-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:10:3-34
+24        <activity android:name="dk.itu.shopping.ShoppingActivity" >
+24-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:11:3-16:14
+24-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:11:13-45
+25            <intent-filter>
+25-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:12:4-15:20
+26                <action android:name="android.intent.action.MAIN" />
+26-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:13:5-57
+26-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:13:13-54
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:14:5-65
+28-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:14:15-62
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:17:3-19:14
+32            android:name="dk.itu.shopping.ListActivity"
+32-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:17:13-41
+33            android:screenOrientation="sensor" >
+33-->/Users/jiali/Documents/Course/Mobile App Development/MMAD2024repo/ShoppingBarcode/app/src/main/AndroidManifest.xml:18:4-38
+34        </activity>
+35        <!--
+36        This activity is an invisible delegate activity to start scanner activity
+37        and receive result, so it's unnecessary to support screen orientation and
+38        we can avoid any side effect from activity recreation in any case.
+39        -->
+40        <activity
+40-->[com.google.android.gms:play-services-code-scanner:16.1.0] /Users/jiali/.gradle/caches/transforms-3/bebce05fe8bf6f5bb7d2d4b6e045ebec/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:15:9-20:20
+41            android:name="com.google.mlkit.vision.codescanner.internal.GmsBarcodeScanningDelegateActivity"
+41-->[com.google.android.gms:play-services-code-scanner:16.1.0] /Users/jiali/.gradle/caches/transforms-3/bebce05fe8bf6f5bb7d2d4b6e045ebec/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:16:13-107
+42            android:exported="false"
+42-->[com.google.android.gms:play-services-code-scanner:16.1.0] /Users/jiali/.gradle/caches/transforms-3/bebce05fe8bf6f5bb7d2d4b6e045ebec/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:17:13-37
+43            android:screenOrientation="portrait" >
+43-->[com.google.android.gms:play-services-code-scanner:16.1.0] /Users/jiali/.gradle/caches/transforms-3/bebce05fe8bf6f5bb7d2d4b6e045ebec/transformed/jetified-play-services-code-scanner-16.1.0/AndroidManifest.xml:18:13-49
+44        </activity>
+45
+46        <service
+46-->[com.google.mlkit:vision-common:17.0.0] /Users/jiali/.gradle/caches/transforms-3/b9abf8f62cccb617cefb3a0602ffdcf7/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:9:9-15:19
+47            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+47-->[com.google.mlkit:vision-common:17.0.0] /Users/jiali/.gradle/caches/transforms-3/b9abf8f62cccb617cefb3a0602ffdcf7/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:10:13-91
+48            android:directBootAware="true"
+48-->[com.google.mlkit:common:18.9.0] /Users/jiali/.gradle/caches/transforms-3/354e9b510a8417162d902e5ebb8c0d6b/transformed/jetified-common-18.9.0/AndroidManifest.xml:17:13-43
+49            android:exported="false" >
+49-->[com.google.mlkit:vision-common:17.0.0] /Users/jiali/.gradle/caches/transforms-3/b9abf8f62cccb617cefb3a0602ffdcf7/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:11:13-37
+50            <meta-data
+50-->[com.google.mlkit:vision-common:17.0.0] /Users/jiali/.gradle/caches/transforms-3/b9abf8f62cccb617cefb3a0602ffdcf7/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:12:13-14:85
+51                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+51-->[com.google.mlkit:vision-common:17.0.0] /Users/jiali/.gradle/caches/transforms-3/b9abf8f62cccb617cefb3a0602ffdcf7/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:13:17-124
+52                android:value="com.google.firebase.components.ComponentRegistrar" />
+52-->[com.google.mlkit:vision-common:17.0.0] /Users/jiali/.gradle/caches/transforms-3/b9abf8f62cccb617cefb3a0602ffdcf7/transformed/jetified-vision-common-17.0.0/AndroidManifest.xml:14:17-82
+53            <meta-data
+53-->[com.google.mlkit:common:18.9.0] /Users/jiali/.gradle/caches/transforms-3/354e9b510a8417162d902e5ebb8c0d6b/transformed/jetified-common-18.9.0/AndroidManifest.xml:20:13-22:85
+54                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+54-->[com.google.mlkit:common:18.9.0] /Users/jiali/.gradle/caches/transforms-3/354e9b510a8417162d902e5ebb8c0d6b/transformed/jetified-common-18.9.0/AndroidManifest.xml:21:17-120
+55                android:value="com.google.firebase.components.ComponentRegistrar" />
+55-->[com.google.mlkit:common:18.9.0] /Users/jiali/.gradle/caches/transforms-3/354e9b510a8417162d902e5ebb8c0d6b/transformed/jetified-common-18.9.0/AndroidManifest.xml:22:17-82
+56        </service>
+57
+58        <provider
+58-->[com.google.mlkit:common:18.9.0] /Users/jiali/.gradle/caches/transforms-3/354e9b510a8417162d902e5ebb8c0d6b/transformed/jetified-common-18.9.0/AndroidManifest.xml:9:9-13:38
+59            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+59-->[com.google.mlkit:common:18.9.0] /Users/jiali/.gradle/caches/transforms-3/354e9b510a8417162d902e5ebb8c0d6b/transformed/jetified-common-18.9.0/AndroidManifest.xml:10:13-78
+60            android:authorities="dk.itu.shopping.mlkitinitprovider"
+60-->[com.google.mlkit:common:18.9.0] /Users/jiali/.gradle/caches/transforms-3/354e9b510a8417162d902e5ebb8c0d6b/transformed/jetified-common-18.9.0/AndroidManifest.xml:11:13-69
+61            android:exported="false"
+61-->[com.google.mlkit:common:18.9.0] /Users/jiali/.gradle/caches/transforms-3/354e9b510a8417162d902e5ebb8c0d6b/transformed/jetified-common-18.9.0/AndroidManifest.xml:12:13-37
+62            android:initOrder="99" />
+62-->[com.google.mlkit:common:18.9.0] /Users/jiali/.gradle/caches/transforms-3/354e9b510a8417162d902e5ebb8c0d6b/transformed/jetified-common-18.9.0/AndroidManifest.xml:13:13-35
+63
+64        <service
+64-->[com.google.android.gms:play-services-tflite-impl:16.1.0] /Users/jiali/.gradle/caches/transforms-3/be9a585c5f617cefa8ffd36377b2297d/transformed/jetified-play-services-tflite-impl-16.1.0/AndroidManifest.xml:9:9-21:19
+65            android:name="com.google.android.gms.metadata.ModuleDependencies"
+65-->[com.google.android.gms:play-services-tflite-impl:16.1.0] /Users/jiali/.gradle/caches/transforms-3/be9a585c5f617cefa8ffd36377b2297d/transformed/jetified-play-services-tflite-impl-16.1.0/AndroidManifest.xml:10:13-78
+66            android:enabled="false"
+66-->[com.google.android.gms:play-services-tflite-impl:16.1.0] /Users/jiali/.gradle/caches/transforms-3/be9a585c5f617cefa8ffd36377b2297d/transformed/jetified-play-services-tflite-impl-16.1.0/AndroidManifest.xml:11:13-36
+67            android:exported="false" >
+67-->[com.google.android.gms:play-services-tflite-impl:16.1.0] /Users/jiali/.gradle/caches/transforms-3/be9a585c5f617cefa8ffd36377b2297d/transformed/jetified-play-services-tflite-impl-16.1.0/AndroidManifest.xml:12:13-37
+68            <intent-filter>
+68-->[com.google.android.gms:play-services-tflite-impl:16.1.0] /Users/jiali/.gradle/caches/transforms-3/be9a585c5f617cefa8ffd36377b2297d/transformed/jetified-play-services-tflite-impl-16.1.0/AndroidManifest.xml:14:13-16:29
+69                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+69-->[com.google.android.gms:play-services-tflite-impl:16.1.0] /Users/jiali/.gradle/caches/transforms-3/be9a585c5f617cefa8ffd36377b2297d/transformed/jetified-play-services-tflite-impl-16.1.0/AndroidManifest.xml:15:17-94
+69-->[com.google.android.gms:play-services-tflite-impl:16.1.0] /Users/jiali/.gradle/caches/transforms-3/be9a585c5f617cefa8ffd36377b2297d/transformed/jetified-play-services-tflite-impl-16.1.0/AndroidManifest.xml:15:25-91
+70            </intent-filter>
+71
+72            <meta-data
+72-->[com.google.android.gms:play-services-tflite-impl:16.1.0] /Users/jiali/.gradle/caches/transforms-3/be9a585c5f617cefa8ffd36377b2297d/transformed/jetified-play-services-tflite-impl-16.1.0/AndroidManifest.xml:18:13-20:36
+73                android:name="tflite_dynamite:3:required"
+73-->[com.google.android.gms:play-services-tflite-impl:16.1.0] /Users/jiali/.gradle/caches/transforms-3/be9a585c5f617cefa8ffd36377b2297d/transformed/jetified-play-services-tflite-impl-16.1.0/AndroidManifest.xml:19:17-58
+74                android:value="" />
+74-->[com.google.android.gms:play-services-tflite-impl:16.1.0] /Users/jiali/.gradle/caches/transforms-3/be9a585c5f617cefa8ffd36377b2297d/transformed/jetified-play-services-tflite-impl-16.1.0/AndroidManifest.xml:20:17-33
+75        </service>
+76
+77        <activity
+77-->[com.google.android.gms:play-services-base:18.4.0] /Users/jiali/.gradle/caches/transforms-3/555c3ba488a8a0dc141679c872cce048/transformed/jetified-play-services-base-18.4.0/AndroidManifest.xml:20:9-22:45
+78            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+78-->[com.google.android.gms:play-services-base:18.4.0] /Users/jiali/.gradle/caches/transforms-3/555c3ba488a8a0dc141679c872cce048/transformed/jetified-play-services-base-18.4.0/AndroidManifest.xml:20:19-85
+79            android:exported="false"
+79-->[com.google.android.gms:play-services-base:18.4.0] /Users/jiali/.gradle/caches/transforms-3/555c3ba488a8a0dc141679c872cce048/transformed/jetified-play-services-base-18.4.0/AndroidManifest.xml:22:19-43
+80            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+80-->[com.google.android.gms:play-services-base:18.4.0] /Users/jiali/.gradle/caches/transforms-3/555c3ba488a8a0dc141679c872cce048/transformed/jetified-play-services-base-18.4.0/AndroidManifest.xml:21:19-78
+81
+82        <meta-data
+82-->[com.google.android.gms:play-services-basement:18.3.0] /Users/jiali/.gradle/caches/transforms-3/ba05c5755666a5fbc732bb92a402a16c/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+83            android:name="com.google.android.gms.version"
+83-->[com.google.android.gms:play-services-basement:18.3.0] /Users/jiali/.gradle/caches/transforms-3/ba05c5755666a5fbc732bb92a402a16c/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+84            android:value="@integer/google_play_services_version" />
+84-->[com.google.android.gms:play-services-basement:18.3.0] /Users/jiali/.gradle/caches/transforms-3/ba05c5755666a5fbc732bb92a402a16c/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+85
+86        <provider
+86-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+87            android:name="androidx.startup.InitializationProvider"
+87-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+88            android:authorities="dk.itu.shopping.androidx-startup"
+88-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+89            android:exported="false" >
+89-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+90            <meta-data
+90-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+91                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+91-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+92                android:value="androidx.startup" />
+92-->[androidx.emoji2:emoji2:1.0.0] /Users/jiali/.gradle/caches/transforms-3/5dbdaa682f4eeb76a4b98d88db77476b/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+93            <meta-data
+93-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jiali/.gradle/caches/transforms-3/567bfa830a03972b3944320e0a4a107e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+94                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+94-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jiali/.gradle/caches/transforms-3/567bfa830a03972b3944320e0a4a107e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+95                android:value="androidx.startup" />
+95-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jiali/.gradle/caches/transforms-3/567bfa830a03972b3944320e0a4a107e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+96        </provider>
+97
+98        <service
+98-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jiali/.gradle/caches/transforms-3/c2610f0ffa0a675ad2e7e049629d02db/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+99            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+99-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jiali/.gradle/caches/transforms-3/c2610f0ffa0a675ad2e7e049629d02db/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+100            android:exported="false" >
+100-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jiali/.gradle/caches/transforms-3/c2610f0ffa0a675ad2e7e049629d02db/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+101            <meta-data
+101-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jiali/.gradle/caches/transforms-3/c2610f0ffa0a675ad2e7e049629d02db/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+102                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+102-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jiali/.gradle/caches/transforms-3/c2610f0ffa0a675ad2e7e049629d02db/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+103                android:value="cct" />
+103-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/jiali/.gradle/caches/transforms-3/c2610f0ffa0a675ad2e7e049629d02db/transformed/jetified-transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+104        </service>
+105        <service
+105-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/jiali/.gradle/caches/transforms-3/f0dc003194d8d1cc2c8d32dc2ad37cb6/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+106            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+106-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/jiali/.gradle/caches/transforms-3/f0dc003194d8d1cc2c8d32dc2ad37cb6/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+107            android:exported="false"
+107-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/jiali/.gradle/caches/transforms-3/f0dc003194d8d1cc2c8d32dc2ad37cb6/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+108            android:permission="android.permission.BIND_JOB_SERVICE" >
+108-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/jiali/.gradle/caches/transforms-3/f0dc003194d8d1cc2c8d32dc2ad37cb6/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+109        </service>
+110
+111        <receiver
+111-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/jiali/.gradle/caches/transforms-3/f0dc003194d8d1cc2c8d32dc2ad37cb6/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+112            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+112-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/jiali/.gradle/caches/transforms-3/f0dc003194d8d1cc2c8d32dc2ad37cb6/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+113            android:exported="false" />
+113-->[com.google.android.datatransport:transport-runtime:2.2.6] /Users/jiali/.gradle/caches/transforms-3/f0dc003194d8d1cc2c8d32dc2ad37cb6/transformed/jetified-transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+114    </application>
+115
+116</manifest>
